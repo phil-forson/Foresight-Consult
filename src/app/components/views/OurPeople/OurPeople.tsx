@@ -44,7 +44,7 @@ const OurPeople = () => {
       </div>
       <div className="text-center text-gray-500 mt-5">
         Our teams thrive on collaboration to help solve complex issues. We
-        operate as an extension of our clients' organizations to help them
+        operate as an extension of our clients&apos; organizations to help them
         understand the broader landscape and introduce new ways of thinking.
         Global team members include:
       </div>
