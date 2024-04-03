@@ -1,5 +1,7 @@
 "use client";
 import { useState } from "react";
+import Logo from "../../../../../public/images/logo.png";
+import Image from "next/image";
 
 export const Nav: React.FC = () => {
   const [activeItem, setActiveItem] = useState("Customers");
@@ -38,8 +40,11 @@ export const Nav: React.FC = () => {
     <div className="w-full flex justify-between items-center py-4 px-36 bg-transparent absolute top-0 h-24 z-50">
       {/* Logo */}
       <div className="text-xl font-bold">
-        {/* {<img src={Logo} className="w-24 sm:w-auto "/> */}
-        Foresight Consult
+        <Image
+          src={Logo}
+          alt="Foresight Logo"
+          className="w-10 h-10 sm:w-auto "
+        />
       </div>
 
       {/* Links */}
