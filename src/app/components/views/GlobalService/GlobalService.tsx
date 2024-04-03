@@ -36,7 +36,7 @@ const GlobalService = () => {
       <div className="flex justify-between gap-10">
         <div className="flex flex-col">
           {firstColumnItems.map((section, index) => (
-            <div className={`border-t-2 border-blue-primary py-7 `}>
+            <div className={`border-t-2 border-blue-primary py-7 `} key={index}>
               <div className="text-black font-semibold">{section.heading}</div>
               <div className="text-[#505A72]">{section.body}</div>
             </div>
@@ -44,7 +44,7 @@ const GlobalService = () => {
         </div>
         <div className="flex flex-col">
           {secondColumnItems.map((section, index) => (
-            <div className={`border-t-2 border-blue-primary py-7 `}>
+            <div className={`border-t-2 border-blue-primary py-7 `} key={index}>
               <div className="text-black font-semibold">{section.heading}</div>
               <div className="text-[#505A72]">{section.body}</div>
             </div>
