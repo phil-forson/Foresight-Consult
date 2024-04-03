@@ -1,0 +1,12 @@
+.backgroundImage {
+    background-image: url('../../../../../public/images/heroimage.png');
+    height: 100vh; /* Full height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    color: white; /* Text color */
+    font-size: 2em; /* Text size */
+}
