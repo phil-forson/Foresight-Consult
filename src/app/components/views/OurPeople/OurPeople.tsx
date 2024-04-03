@@ -50,8 +50,8 @@ const OurPeople = () => {
       </div>
       <div className="embla mt-10" ref={emblaRef}>
         <div className="embla__container text-black">
-          {people.map((person) => (
-            <div className="embla__slide flex flex-col justify-center items-center">
+          {people.map((person, index) => (
+            <div className="embla__slide flex flex-col justify-center items-center" key={index}>
               <Image
                 src={MarfoPNG}
                 alt="Senior Dev"
