@@ -8,7 +8,7 @@ const JoinOurTeam = () => {
     <section className="px-3 relative min-h-96 w-full">
       <Image src={Banner} alt="Banner" fill={true} objectFit="cover" />
       <div className="absolute inset-0 bg-gradient-to-r from-[rgba(160,0,174,0.9)] to-[rgba(5,19,54,0)] bg-opacity-50 h-auto"></div>
-      <div className="flex flex-col relative z-50 w-[50%] pl-36 justify-center text-white h-96">
+      <div className="flex flex-col relative z-50 w-full md:w-[50%] px-5 md:px-0 md:pl-36 justify-center text-white h-96">
         <div className="text-4xl text-white font-bold">Join Our Team</div>
         <div className="mt-5">
           We leverage the collective experience and expertise of our global team

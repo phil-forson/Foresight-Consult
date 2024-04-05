@@ -29,14 +29,14 @@ const GlobalService = () => {
   const secondColumnItems = data.slice(3, 5);
 
   return (
-    <section className=" bg-white px-36 py-20 w-full">
+    <section className=" bg-white px-10 md:px-36 py-10 md:py-20 w-full">
       <div className="text-3xl mb-5 text-blue-primary font-semibold">
         Global Service Offering
       </div>
-      <div className="flex justify-between gap-10">
+      <div className="flex flex-col md:flex-row md:justify-between md:gap-10">
         <div className="flex flex-col">
           {firstColumnItems.map((section, index) => (
-            <div className={`border-t-2 border-blue-primary py-7 `} key={index}>
+            <div className={`border-t-2 border-blue-primary py-7`} key={index}>
               <div className="text-black font-semibold">{section.heading}</div>
               <div className="text-[#505A72]">{section.body}</div>
             </div>

@@ -38,7 +38,7 @@ const OurPeople = () => {
     },
   ];
   return (
-    <section className="min-h-50 py-20 bg-white px-56">
+    <section className="min-h-50 py-20 bg-white px-10 md:px-56">
       <div className="text-blue-primary text-center text-xl font-bold">
         Our People
       </div>
@@ -51,13 +51,16 @@ const OurPeople = () => {
       <div className="embla mt-10" ref={emblaRef}>
         <div className="embla__container text-black">
           {people.map((person, index) => (
-            <div className="embla__slide flex flex-col justify-center items-center" key={index}>
+            <div
+              className="embla__slide flex flex-col justify-center items-center"
+              key={index}
+            >
               <Image
                 src={MarfoPNG}
                 alt="Senior Dev"
                 width={100}
                 height={100}
-                className="rounded-full w-48 h-48 object-cover"
+                className="rounded-full w-36 h-36 md:w-48 md:h-48 object-cover"
               />
               <div className="mt-5 text-blue-primary">{person.name}</div>
               <div>{person.role}</div>
@@ -65,7 +68,7 @@ const OurPeople = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center gap-8 items-center mt-10">
+      <div className="flex flex-col md:flex-row justify-center gap-4 md:gap-8 items-center mt-10">
         <div className="border-2 border-blue-primary flex justify-between w-64 items-center bg-transparent text-black px-4 py-2">
           <div className="text-blue-primary font-semibold">Search People</div>
           <BsArrowRight className="text-blue-primary" />

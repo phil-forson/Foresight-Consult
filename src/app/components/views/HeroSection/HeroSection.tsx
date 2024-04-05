@@ -9,8 +9,10 @@ const HeroSection = () => {
     <section className="relative w-full h-screen overflow-hidden flex justify-center items-center">
       <Image src={HeroImg} alt="Banner" fill={true} objectFit="cover" />
       <div className="absolute inset-0 h-auto bg-gradient-to-r from-[#001C61] from-10% via-[rgba(0,24,83,0.875)] to-[rgba(0,25,86,0)]">
-        <div className="text-white w-[50%] h-screen flex flex-col justify-center px-36">
-          <div className="text-5xl font-bold">The Global CEO Advisory Firm</div>
+        <div className="text-white w-full xl:w-[50%] h-screen flex flex-col justify-center px-10 md:px-36">
+          <div className=" text-4xl md:text-5xl font-bold">
+            The Global CEO Advisory Firm
+          </div>
           <div className="mt-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

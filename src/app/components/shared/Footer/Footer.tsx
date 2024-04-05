@@ -36,8 +36,8 @@ const Footer = () => {
     );
   };
   return (
-    <div className="py-4 bg-white px-36 text-blue-600">
-      <div className="flex justify-between items-center   ">
+    <div className="py-4 bg-white px-10 md:px-36 text-blue-600">
+      <div className="flex flex-col md:flex-row justify-between items-center   ">
         {/* Logo */}
         <div className="text-xl font-semibold">
           {/* {<img src={Logo} className="w-24 sm:w-auto "/> */}
@@ -46,7 +46,7 @@ const Footer = () => {
 
         {/* Links */}
         <div className="flex justify-between">
-          <div className="hidden lg:flex space-x-[12px] ">
+          <div className="flex flex-wrap lg:flex md:space-x-[12px] ">
             {renderNavLink("Our Firm")}
             {renderNavLink("Offices")}
             {renderNavLink("News")}
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="mt-6 pb-10 flex justify-between border-b border-blue-500">
+      <div className="mt-6 pb-10 flex md:flex-row flex-col gap-5 md:gap-0 justify-between border-b border-blue-500">
         <div>
           <div className="flex flex-col">
             <div className="mb-5">United Kingdom</div>
@@ -70,7 +70,7 @@ const Footer = () => {
         </div>
         <Image src={Map} alt="Map" objectFit="cover" />
       </div>
-      <div className="py-6 flex justify-between items-center border-b border-blue-500">
+      <div className="py-6 flex md:flex-row flex-col gap-2 md:gap-0 md:justify-between md:items-center border-b border-blue-500">
         <div className="flex flex-col gap-2">
           <div className="text-black ">Business Segments</div>
           <div>Strategy & Communications</div>
@@ -88,7 +88,7 @@ const Footer = () => {
           <div>Ghana</div>
         </div>
       </div>
-      <div className="flex justify-between text-black py-4">
+      <div className="flex md:flex-row flex-col gap-5 md:gap-0 justify-between text-black text-sm py-4">
         <div>
           © {new Date(Date.now()).getFullYear().toString()} Foresight Consult.
           All rights reserved.

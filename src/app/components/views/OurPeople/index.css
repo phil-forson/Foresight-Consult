@@ -9,3 +9,9 @@
   .embla__slide {
     flex: 0 0 33.333333%;
   }
+
+  @media only screen and (max-width: 600px) {
+    .embla__slide {
+      flex: 0 0 80%;
+    }
+  }

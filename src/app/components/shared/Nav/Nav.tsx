@@ -37,13 +37,13 @@ export const Nav: React.FC = () => {
   };
 
   return (
-    <div className="w-full flex justify-between items-center py-4 px-36 bg-transparent absolute top-0 h-24 z-50">
+    <div className="w-full flex justify-between items-center py-4 px-10 md:px-36 bg-transparent absolute top-0 h-24 z-50">
       {/* Logo */}
       <div className="text-xl font-bold">
         <Image
           src={Logo}
           alt="Foresight Logo"
-          className="w-10 h-10 sm:w-auto "
+          className="w-5 h-5 md:w-10 md:h-10 sm:w-auto "
         />
       </div>
 
